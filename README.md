@@ -1,6 +1,10 @@
 Internet-of-Things Simple Telemetry on Microsoft Azure
 ------------------------------------------------------
 
+# Alert 
+The details in this writeup are based on older versions of the Azure and AWS training and resources. It might not match up with the current offerings. However the basic ideas here are still relevant. Just go to the AWS and Azure IOT resources and follow the newer training support.
+
+# Purpose
 Using an IoT device with some sensors on it, I want to be able to monitor them in real time
 from anywhere I have cellular or wifi access, and send commands to the device. The purpose of this experiment is to see what pieces, software and hardware, 
 that need to be in the solution to get it to work. 

@@ -1,6 +1,10 @@
 Internet-of-Things Simple Telemetry on Microsoft Azure
 ------------------------------------------------------
 
+# Update
+TThis writeup is based on older Azure training.  Go here for the latest [Azure IOT Training resources ](https://docs.microsoft.com/en-us/learn/certifications/azure-iot-developer-specialty)
+
+# Purpose
 Using an IoT device with some sensors on it, I want to be able to monitor them in real time
 from anywhere I have cellular or wifi access, and send commands to the device. The purpose of this experiment is to see what pieces, software and hardware, 
 that need to be in the solution to get it to work. 

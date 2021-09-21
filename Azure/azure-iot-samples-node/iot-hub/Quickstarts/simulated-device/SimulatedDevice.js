@@ -14,7 +14,7 @@
 //
 // Using the Azure CLI:
 // az iot hub device-identity show-connection-string --hub-name {YourIoTHubName} --device-id MyNodeDevice --output table
-var connectionString = process.env.IOT_DEVICE_CONNECTION;
+var connectionString = '{Your device connection string here}';
 
 // Using the Node.js Device SDK for IoT Hub:
 //   https://github.com/Azure/azure-iot-sdk-node
@@ -48,4 +48,4 @@ setInterval(function(){
       console.log('message sent');
     }
   });
-}, 10000);
+}, 1000);

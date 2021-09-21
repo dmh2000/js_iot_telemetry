@@ -35,6 +35,7 @@ setInterval(function () {
     JSON.stringify({
       temperature: temperature,
       humidity: 60 + Math.random() * 20,
+      time: (new Date()).toISOString(),
     })
   );
 
@@ -55,4 +56,4 @@ setInterval(function () {
       console.log("message sent");
     }
   });
-}, 10000);
+}, 1000);

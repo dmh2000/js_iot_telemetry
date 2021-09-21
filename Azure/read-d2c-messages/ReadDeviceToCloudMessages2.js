@@ -10,6 +10,12 @@ const {
 } = require("@azure/event-hubs");
 
 async function main() {
+  console.log(process.env.IOT_HUB_ENDPOINT_GROUP);
+  // Endpoint connection string (NOT device connection string)
+  console.log(process.env.IOT_HUB_ENDPOINT_CONNECTION);
+  // Event Hub-Compatible Name
+  console.log(process.env.IOT_HUB_ENDPOINT_NAME);
+
   // get the following from iot-hub name : Built-in-Endpoints
   const client = new EventHubConsumerClient(
     // default consumer group
@@ -31,7 +37,7 @@ async function main() {
       processEvents: async (events, context) => {
         // event processing code goes here
         // event.body is a Buffer
-        console.log(events[0].body.toString());
+        console.log("event:", events[0].body);
       },
       processError: async (err, context) => {
         // error reporting/handling code here
@@ -46,7 +52,7 @@ async function main() {
     await subscription.close();
     await client.close();
     console.log(`Exiting sample`);
-  }, 60 * 1000);
+  }, 60 * 30 * 1000);
 }
 
 main();
